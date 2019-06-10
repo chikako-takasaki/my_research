@@ -1,0 +1,7 @@
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "openpose_all_v2.py", line 78, in <module>
+    model.summary()
+  File "/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/site-packages/keras/engine/network.py", line 1252, in summary
+    'This model has not yet been built. '
+ValueError: This model has not yet been built. Build the model first by calling build() or calling fit() with some data. Or specify input_shape or batch_input_shape in the first layer for automatic build. 

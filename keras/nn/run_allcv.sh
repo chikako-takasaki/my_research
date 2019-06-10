@@ -1,0 +1,1 @@
+nohup sh -c 'python openpose_all_v2.py 0.2 true allv2_dobn.png > ./log/v2_1600/allv2_dobn.txt ; python openpose_all_v2.py 0.2 false allv2_do.png > ./log/v2_1600/allv2_do.txt ; python openpose_all_v2.py 0 true allv2_bn.png > ./log/v2_1600/allv2_bn.txt' &

@@ -1,0 +1,1 @@
+Fitting 2 folds for each of 24 candidates, totalling 48 fits
