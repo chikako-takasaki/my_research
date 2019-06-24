@@ -11,18 +11,18 @@ from sklearn.model_selection import train_test_split
 from sklearn.model_selection import GridSearchCV
 from keras.wrappers.scikit_learn import KerasClassifier
 
+import numpy as np
 import matplotlib.pyplot as plt
  
-data = pd.read_csv('../all_stream.csv', header=None)
+data = pd.read_csv('~/work/normalized_s10.csv', header=None)
 column_len = len(data.columns)
-X = data.loc[:, 0 : (column_len-2)]
+X = data.loc[:, 1 : (column_len-2)]
 y = data.loc[:, column_len-1]
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0)
 
+X_test2 = X_test
 X_train = X_train.values
-X_train /= 1920.0
 X_test = X_test.values
-X_test /= 1920.0
 y_train = y_train.values
 y_test = y_test.values
 
@@ -30,7 +30,7 @@ num_classes = 3
 y_train = to_categorical(y_train, num_classes)
 y_test = to_categorical(y_test, num_classes)
 
-def create_model(activation="relu", nb_hidden=500, layer_num=3, dropout=0.2):
+def create_model(activation="relu", nb_hidden=500, layer_num=3, dropout=0.0):
   model = Sequential([
     Dense(500, input_shape=(500,)),
     Activation(activation),
@@ -38,12 +38,12 @@ def create_model(activation="relu", nb_hidden=500, layer_num=3, dropout=0.2):
   ])
   for i in range(layer_num) :
     model.add(Dense(nb_hidden))
-    model.add(BatchNormalization())
+#    model.add(BatchNormalization())
     model.add(Activation(activation))
     model.add(Dropout(dropout))
    
   model.add(Dense(3))
-  model.add(Activation('sigmoid'))
+  model.add(Activation('softmax'))
 
   model.compile(loss='categorical_crossentropy', optimizer='sgd', metrics=['accuracy'])
   return model
@@ -82,6 +82,7 @@ def plot_history_loss(fit):
   axL.set_title('model loss')
   axL.set_xlabel('epoch')
   axL.set_ylabel('loss')
+  axL.set_ylim([0.0,1.6])
   axL.legend(loc='upper right')
 
 def plot_history_acc(fit):
@@ -91,10 +92,18 @@ def plot_history_acc(fit):
   axR.set_title('model accuracy')
   axR.set_xlabel('epoch')
   axR.set_ylabel('accuracy')
+  axR.set_ylim([0.4,1.0])
   axR.legend(loc='lower right')
 
 
 plot_history_loss(fit)
 plot_history_acc(fit)
-fig.savefig('./image/stream3_dobn_1600.png')
+fig.savefig('./image/stream/d3_1600_2.png')
 plt.close()
+
+# pick up false data
+pred = model.predict_classes(X_test)
+for i, (p, y) in enumerate(zip(pred, y_test)):
+  y = np.where(y == 1)[0][0]
+  if p != y:
+    print('data_num: {}, predict class: {}, correct class: {}'.format(X_test2.index[i], p, y))

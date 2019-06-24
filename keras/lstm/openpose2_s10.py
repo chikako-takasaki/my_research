@@ -32,12 +32,12 @@ def preprocessing(data):
   return data.values
 
 # データ整形
-data = pd.read_csv('~/work/normalized_s10_aug.csv', header=None)
+data = pd.read_csv('~/work/normalized_s10.csv', header=None)
 column_len = len(data.columns)
 X = data.loc[:, 1 : (column_len-2)]
 y = data.loc[:, column_len-1]
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0)
-
+X_test2 = X_test
 #X_test = numpy.array(X_test)
 #zeros  = numpy.zeros((X_train.shape[0] - X_test.shape[0], X_train.shape[1]))
 #X_test = numpy.append(X_test, zeros, axis = 0)
@@ -124,4 +124,11 @@ print('test accuracy : ', test_score[1])
 fig, (axL, axR) = plt.subplots(ncols=2, figsize=(10,4))
 plot_history_loss(fit)
 plot_history_acc(fit)
-fig.savefig("./image/s10_aug/d2_50.png")
+fig.savefig("./image/s10_v2/d2_50_2.png")
+
+# pick up false data
+pred = model.predict_classes(X_test)
+for i, (p, y) in enumerate(zip(pred, y_test)):
+  y = np.where(y == 1)[0][0]
+  if p != y:
+    print('data_num: {}, predict class: {}, correct class: {}'.format(X_test2.index[i], p, y))

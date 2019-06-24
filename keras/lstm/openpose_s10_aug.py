@@ -19,17 +19,31 @@ import augmentation
 length_of_sequence = 10 
 in_out_neurons = 50
 n_hidden = 50
-
+"""
 # データ整形
 data = pd.read_csv('~/work/stream_s10.csv', header=None)
 column_len = len(data.columns)
 train, test = train_test_split(data, random_state=0)
-
+"""
+train = pd.read_csv('~/work/keras/lstm/train_aug_normalized6.csv', header=None) 
+test = pd.read_csv('~/work/keras/lstm/test_aug_normalized6.csv', header=None) 
+column_len = len(train.columns)
+"""
 # train augmentation
 start = time.time()
 train_rev = augmentation.reverse_augment(train)
 process_time = time.time() - start
 print('train reverse aug done')
+print(process_time)
+start = time.time()
+train_rev5 = augmentation.rotation_augment(train_rev, 5)
+process_time = time.time() - start
+print('train reverse rotate5 aug done')
+print(process_time)
+start = time.time()
+train_rev10 = augmentation.rotation_augment(train_rev, 10)
+process_time = time.time() - start
+print('train reverse rotate10 aug done')
 print(process_time)
 start = time.time()
 train_rot5 = augmentation.rotation_augment(train, 5)
@@ -41,12 +55,12 @@ train_rot10 = augmentation.rotation_augment(train, 10)
 process_time = time.time() - start
 print('train rotate10 aug done')
 print(process_time)
-train = train.append(train_rev).append(train_rot5).append(train_rot10)
+train = train.append(train_rev).append(train_rev5).append(train_rev10).append(train_rot5).append(train_rot10)
 train.to_csv("train_aug.csv", header=False, index=False)
 start = time.time()
 train = preprocessing.preprocessing(train)
 process_time = time.time() - start
-train.to_csv("train_aug_normalized.csv", header=False, index=False)
+train.to_csv("train_aug_normalized6.csv", header=False, index=False)
 print('train preprocessing done')
 print(process_time)
 
@@ -55,6 +69,15 @@ start = time.time()
 test_rev = augmentation.reverse_augment(test)
 process_time = time.time() - start
 print('test reverse aug done')
+print(process_time)
+test_rev5 = augmentation.rotation_augment(test_rev, 5)
+process_time = time.time() - start
+print('test reverse rootate5 aug done')
+print(process_time)
+start = time.time()
+test_rev10 = augmentation.rotation_augment(test_rev, 10)
+process_time = time.time() - start
+print('test reverse rotate10 aug done')
 print(process_time)
 start = time.time()
 test_rot5 = augmentation.rotation_augment(test, 5)
@@ -66,14 +89,15 @@ test_rot10 = augmentation.rotation_augment(test, 10)
 process_time = time.time() - start
 print('test rotate10 aug done')
 print(process_time)
-test = test.append(test_rev).append(test_rot5).append(test_rot10)
+test = test.append(test_rev).append(test_rev5).append(test_rev10).append(test_rot5).append(test_rot10)
 test.to_csv("test_aug.csv", header=False, index=False)
 start = time.time()
 test = preprocessing.preprocessing(test)
 process_time = time.time() - start
-test.to_csv("test_aug_normalized.csv", header=False, index=False)
+test.to_csv("test_aug_normalized6.csv", header=False, index=False)
 print('test preprocessing done')
 print(process_time)
+"""
 
 X_train = train.loc[:, :column_len-2].values
 y_train = train.loc[:, column_len-1].values
@@ -99,7 +123,7 @@ def create_model(activation="relu"):
     TimeDistributed(Dense(n_hidden), input_shape=(length_of_sequence, in_out_neurons)),
     TimeDistributed(Dense(n_hidden)),
     #Reshape((10, 50)),
-    LSTM(n_hidden, dropout=0.2, recurrent_dropout=0.0),
+    LSTM(n_hidden, dropout=0.0, recurrent_dropout=0.0),
     #Flatten(),
     Dense(num_classes),
     #Flatten(),
@@ -153,4 +177,4 @@ print('test accuracy : ', test_score[1])
 fig, (axL, axR) = plt.subplots(ncols=2, figsize=(10,4))
 plot_history_loss(fit)
 plot_history_acc(fit)
-fig.savefig("./image/s10_aug/dr02_50.png")
+fig.savefig("./image/s10_aug/d2_50_6.png")

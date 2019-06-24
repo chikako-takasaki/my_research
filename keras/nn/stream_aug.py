@@ -54,7 +54,7 @@ def create_model(activation="relu", nb_hidden=500, layer_num=3, dropout=0.2):
     model.add(Dropout(dropout))
    
   model.add(Dense(3))
-  model.add(Activation('sigmoid'))
+  model.add(Activation('softmax'))
 
   model.compile(loss='categorical_crossentropy', optimizer='sgd', metrics=['accuracy'])
   return model
@@ -93,6 +93,7 @@ def plot_history_loss(fit):
   axL.set_title('model loss')
   axL.set_xlabel('epoch')
   axL.set_ylabel('loss')
+  axL.set_ylim([0.0,1.6])
   axL.legend(loc='upper right')
 
 def plot_history_acc(fit):
@@ -102,6 +103,7 @@ def plot_history_acc(fit):
   axR.set_title('model accuracy')
   axR.set_xlabel('epoch')
   axR.set_ylabel('accuracy')
+  axR.set_ylim([0.4,1.0])
   axR.legend(loc='lower right')
 
 
