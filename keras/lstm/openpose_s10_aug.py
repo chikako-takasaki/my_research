@@ -28,7 +28,7 @@ train, test = train_test_split(data, random_state=0)
 train = pd.read_csv('~/work/keras/lstm/train_aug_normalized6.csv', header=None) 
 test = pd.read_csv('~/work/keras/lstm/test_aug_normalized6.csv', header=None) 
 column_len = len(train.columns)
-"""
+
 # train augmentation
 start = time.time()
 train_rev = augmentation.reverse_augment(train)
@@ -46,6 +46,16 @@ process_time = time.time() - start
 print('train reverse rotate10 aug done')
 print(process_time)
 start = time.time()
+train_rev_5 = augmentation.rotation_augment(train_rev, -5)
+process_time = time.time() - start
+print('train reverse rotate-5 aug done')
+print(process_time)
+start = time.time()
+train_rev_10 = augmentation.rotation_augment(train_rev, -10)
+process_time = time.time() - start
+print('train reverse rotate-10 aug done')
+print(process_time)
+start = time.time()
 train_rot5 = augmentation.rotation_augment(train, 5)
 process_time = time.time() - start
 print('train rotate5 aug done')
@@ -55,12 +65,23 @@ train_rot10 = augmentation.rotation_augment(train, 10)
 process_time = time.time() - start
 print('train rotate10 aug done')
 print(process_time)
-train = train.append(train_rev).append(train_rev5).append(train_rev10).append(train_rot5).append(train_rot10)
+start = time.time()
+train_rot_5 = augmentation.rotation_augment(train, -5)
+process_time = time.time() - start
+print('train rotate-5 aug done')
+print(process_time)
+start = time.time()
+train_rot_10 = augmentation.rotation_augment(train, -10)
+process_time = time.time() - start
+print('train rotate-10 aug done')
+print(process_time)
+
+train = train.append(train_rev).append(train_rev5).append(train_rev10).append(train_rev_5).append(train_rev_10).append(train_rot5).append(train_rot10).append(train_rot_5).append(train_rot_10)
 train.to_csv("train_aug.csv", header=False, index=False)
 start = time.time()
 train = preprocessing.preprocessing(train)
 process_time = time.time() - start
-train.to_csv("train_aug_normalized6.csv", header=False, index=False)
+train.to_csv("train_aug_normalized10.csv", header=False, index=False)
 print('train preprocessing done')
 print(process_time)
 
@@ -80,6 +101,17 @@ process_time = time.time() - start
 print('test reverse rotate10 aug done')
 print(process_time)
 start = time.time()
+test_rev_5 = augmentation.rotation_augment(test_rev, -5)
+process_time = time.time() - start
+print('test reverse rotate-5 aug done')
+print(process_time)
+start = time.time()
+test_rev_10 = augmentation.rotation_augment(test_rev, -10)
+process_time = time.time() - start
+print('test reverse rotate-10 aug done')
+print(process_time)
+
+start = time.time()
 test_rot5 = augmentation.rotation_augment(test, 5)
 process_time = time.time() - start
 print('test rotate5 aug done')
@@ -89,15 +121,26 @@ test_rot10 = augmentation.rotation_augment(test, 10)
 process_time = time.time() - start
 print('test rotate10 aug done')
 print(process_time)
-test = test.append(test_rev).append(test_rev5).append(test_rev10).append(test_rot5).append(test_rot10)
+start = time.time()
+test_rot_5 = augmentation.rotation_augment(test, -5)
+process_time = time.time() - start
+print('test rotate-5 aug done')
+print(process_time)
+start = time.time()
+test_rot_10 = augmentation.rotation_augment(test, -10)
+process_time = time.time() - start
+print('test rotate-10 aug done')
+print(process_time)
+
+test = test.append(test_rev).append(test_rev5).append(test_rev10).append(test_rev_5).append(test_rev_10).append(test_rot5).append(test_rot10).append(test_rot_5).append(test_rot_10)
 test.to_csv("test_aug.csv", header=False, index=False)
 start = time.time()
 test = preprocessing.preprocessing(test)
 process_time = time.time() - start
-test.to_csv("test_aug_normalized6.csv", header=False, index=False)
+test.to_csv("test_aug_normalized10.csv", header=False, index=False)
 print('test preprocessing done')
 print(process_time)
-"""
+
 
 X_train = train.loc[:, :column_len-2].values
 y_train = train.loc[:, column_len-1].values
@@ -177,4 +220,4 @@ print('test accuracy : ', test_score[1])
 fig, (axL, axR) = plt.subplots(ncols=2, figsize=(10,4))
 plot_history_loss(fit)
 plot_history_acc(fit)
-fig.savefig("./image/s10_aug/d2_50_6.png")
+fig.savefig("./image/s10_aug/d2_50_10.png")

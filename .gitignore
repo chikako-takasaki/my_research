@@ -1,3 +1,6 @@
 ffmpeg
 keras_gcn
 *.out
+.*
+aug_data
+*.tar.gz

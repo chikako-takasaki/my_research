@@ -5,7 +5,7 @@ import sys
 import glob
 import pandas as pd
 
-category_dict = { 'bowing':2 }
+category_dict = { 'writing': 0, 'reading': 1, 'bowing': 2 }
 
 def json_to_series(n,input_file, category_name):
   json_data = json.load(input_file)
@@ -60,6 +60,7 @@ def replace_zeros(data):
           if n == 10:
             flag = True
             drop_flag = True
+            print('category:{}, index:{} removed.'.format(category, i))
       else:
         row[column_len-1] = category
         new_data = new_data.append(row)

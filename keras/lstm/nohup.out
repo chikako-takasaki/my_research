@@ -408,3 +408,25 @@ W0623 16:04:32.189777 140553290786624 deprecation_wrapper.py:119] From /home/acb
 2019-06-23 16:04:32.265646: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x4cf9580 executing computations on platform Host. Devices:
 2019-06-23 16:04:32.265698: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
 2019-06-23 16:04:32.403015: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+Using TensorFlow backend.
+WARNING: Logging before flag parsing goes to stderr.
+W0629 22:46:24.031818 140676396066624 deprecation_wrapper.py:119] From /home/acb10970jb/.pyenv/versions/3.6.0/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:74: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+W0629 22:46:24.180021 140676396066624 deprecation_wrapper.py:119] From /home/acb10970jb/.pyenv/versions/3.6.0/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:517: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+W0629 22:46:24.301691 140676396066624 deprecation_wrapper.py:119] From /home/acb10970jb/.pyenv/versions/3.6.0/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:4138: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+W0629 22:46:24.603904 140676396066624 deprecation_wrapper.py:119] From /home/acb10970jb/.pyenv/versions/3.6.0/lib/python3.6/site-packages/keras/optimizers.py:790: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+W0629 22:46:24.616755 140676396066624 deprecation_wrapper.py:119] From /home/acb10970jb/.pyenv/versions/3.6.0/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:3295: The name tf.log is deprecated. Please use tf.math.log instead.
+
+W0629 22:46:24.855272 140676396066624 deprecation.py:323] From /home/acb10970jb/.pyenv/versions/3.6.0/lib/python3.6/site-packages/tensorflow/python/ops/math_grad.py:1250: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0629 22:46:25.320107 140676396066624 deprecation_wrapper.py:119] From /home/acb10970jb/.pyenv/versions/3.6.0/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:986: The name tf.assign_add is deprecated. Please use tf.compat.v1.assign_add instead.
+
+2019-06-29 22:46:25.399126: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2019-06-29 22:46:25.525076: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2400000000 Hz
+2019-06-29 22:46:25.539439: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x8d13c70 executing computations on platform Host. Devices:
+2019-06-29 22:46:25.540351: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2019-06-29 22:46:25.814634: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
