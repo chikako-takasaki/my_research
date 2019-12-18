@@ -430,3 +430,503 @@ W0629 22:46:25.320107 140676396066624 deprecation_wrapper.py:119] From /home/acb
 2019-06-29 22:46:25.539439: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x8d13c70 executing computations on platform Host. Devices:
 2019-06-29 22:46:25.540351: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
 2019-06-29 22:46:25.814634: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+sh: 1: cannot create ./log/100ctg/d2_500.txt: Directory nonexistent
+2019-08-29 20:24:18.475589: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2019-08-29 20:24:18.906952: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-08-29 20:24:18.907436: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.2155
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2019-08-29 20:24:18.907463: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+Using TensorFlow backend.
+2019-09-02 11:12:12.542439: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2019-09-02 11:12:12.991702: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-09-02 11:12:12.992259: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.2155
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2019-09-02 11:12:12.992286: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+Traceback (most recent call last):
+  File "openpose_100.py", line 2, in <module>
+    from keras.models import Sequential
+ModuleNotFoundError: No module named 'keras'
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "openpose_100.py", line 2, in <module>
+    from keras.models import Sequential
+  File "/home/chikako_takasaki/.pyenv/versions/anaconda3-5.3.0/lib/python3.7/site-packages/keras/__init__.py", line 3, in <module>
+    from . import utils
+  File "/home/chikako_takasaki/.pyenv/versions/anaconda3-5.3.0/lib/python3.7/site-packages/keras/utils/__init__.py", line 6, in <module>
+    from . import conv_utils
+  File "/home/chikako_takasaki/.pyenv/versions/anaconda3-5.3.0/lib/python3.7/site-packages/keras/utils/conv_utils.py", line 9, in <module>
+    from .. import backend as K
+  File "/home/chikako_takasaki/.pyenv/versions/anaconda3-5.3.0/lib/python3.7/site-packages/keras/backend/__init__.py", line 1, in <module>
+    from .load_backend import epsilon
+  File "/home/chikako_takasaki/.pyenv/versions/anaconda3-5.3.0/lib/python3.7/site-packages/keras/backend/load_backend.py", line 89, in <module>
+    from .tensorflow_backend import *
+  File "/home/chikako_takasaki/.pyenv/versions/anaconda3-5.3.0/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py", line 5, in <module>
+    import tensorflow as tf
+ModuleNotFoundError: No module named 'tensorflow'
+2019-09-03 11:17:18.588357: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2019-09-03 11:17:19.131512: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-09-03 11:17:19.132376: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.266
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2019-09-03 11:17:19.132416: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+Using TensorFlow backend.
+Using TensorFlow backend.
+2019-09-04 10:13:27.290672: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2019-09-04 10:13:27.725581: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-09-04 10:13:27.726165: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.2155
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2019-09-04 10:13:27.726197: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+Using TensorFlow backend.
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "openpose_100.py", line 91, in <module>
+    model = create_model()
+  File "openpose_100.py", line 62, in create_model
+    Reshape((10, 50), input_shape=(500,)),
+NameError: name 'Reshape' is not defined
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "openpose_100.py", line 96, in <module>
+    fit = model.fit(X_train, y_train, verbose=2, epochs=800, validation_data=(X_test, y_test))
+  File "/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/site-packages/keras/engine/training.py", line 952, in fit
+    batch_size=batch_size)
+  File "/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/site-packages/keras/engine/training.py", line 751, in _standardize_user_data
+    exception_prefix='input')
+  File "/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/site-packages/keras/engine/training_utils.py", line 128, in standardize_input_data
+    'with shape ' + str(data_shape))
+ValueError: Error when checking input: expected reshape_1_input to have 2 dimensions, but got array with shape (71123, 10, 50)
+2019-09-10 13:53:33.330937: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2019-09-10 13:53:33.780155: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-09-10 13:53:33.780679: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.2155
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2019-09-10 13:53:33.780713: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+2019-09-10 13:56:36.059247: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2019-09-10 13:56:36.459924: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-09-10 13:56:36.460448: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.266
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2019-09-10 13:56:36.460473: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+2019-09-10 13:58:00.105638: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2019-09-10 13:58:00.733088: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-09-10 13:58:00.733569: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.266
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2019-09-10 13:58:00.733592: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+Using TensorFlow backend.
+Using TensorFlow backend.
+Using TensorFlow backend.
+2019-09-11 12:03:39.326792: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2019-09-11 12:03:39.722109: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-09-11 12:03:39.722866: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.2155
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2019-09-11 12:03:39.722902: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+Using TensorFlow backend.
+2019-09-16 14:03:26.792754: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2019-09-16 14:03:27.212958: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-09-16 14:03:27.213485: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.2155
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2019-09-16 14:03:27.213509: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+2019-09-16 14:07:18.523040: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2019-09-16 14:07:18.920045: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-09-16 14:07:18.920569: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.266
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2019-09-16 14:07:18.920601: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+2019-09-16 14:39:54.246317: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2019-09-16 14:39:54.642101: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-09-16 14:39:54.642679: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.266
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2019-09-16 14:39:54.642707: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+Using TensorFlow backend.
+Using TensorFlow backend.
+2019-09-17 19:17:36.571029: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2019-09-17 19:17:36.989507: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-09-17 19:17:36.990087: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.266
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2019-09-17 19:17:36.990112: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+Using TensorFlow backend.
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "openpose_100.py", line 94, in <module>
+    fit = model.fit(X_train, y_train, verbose=2, epochs=800, validation_data=(X_test, y_test))
+  File "/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/site-packages/keras/engine/training.py", line 1039, in fit
+    validation_steps=validation_steps)
+  File "/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/site-packages/keras/engine/training_arrays.py", line 217, in fit_loop
+    callbacks.on_epoch_end(epoch, epoch_logs)
+  File "/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/site-packages/keras/callbacks.py", line 79, in on_epoch_end
+    callback.on_epoch_end(epoch, logs)
+  File "/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/site-packages/keras/callbacks.py", line 338, in on_epoch_end
+    self.progbar.update(self.seen, self.log_values)
+  File "/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/site-packages/keras/utils/generic_utils.py", line 439, in update
+    sys.stdout.flush()
+OSError: [Errno 28] No space left on device
+2019-09-24 14:31:52.290732: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2019-09-24 14:31:52.872319: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-09-24 14:31:52.872822: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.2155
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2019-09-24 14:31:52.872846: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+2019-09-24 14:33:03.712536: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2019-09-24 14:33:04.136303: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-09-24 14:33:04.136822: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.266
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2019-09-24 14:33:04.136847: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+Using TensorFlow backend.
+Using TensorFlow backend.
+2019-10-07 11:14:05.804789: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2019-10-07 11:14:06.192482: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-10-07 11:14:06.192978: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.2155
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2019-10-07 11:14:06.193002: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+2019-10-07 11:16:34.500387: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2019-10-07 11:16:34.907097: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-10-07 11:16:34.907621: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.266
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2019-10-07 11:16:34.907646: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+2019-10-07 11:17:33.050316: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2019-10-07 11:17:33.464168: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-10-07 11:17:33.464717: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.266
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2019-10-07 11:17:33.464745: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+Using TensorFlow backend.
+Using TensorFlow backend.
+Using TensorFlow backend.
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "openpose_100.py", line 94, in <module>
+    fit = model.fit(X_train, y_train, verbose=2, epochs=800, validation_data=(X_test, y_test))
+  File "/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/site-packages/keras/engine/training.py", line 952, in fit
+    batch_size=batch_size)
+  File "/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/site-packages/keras/engine/training.py", line 751, in _standardize_user_data
+    exception_prefix='input')
+  File "/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/site-packages/keras/engine/training_utils.py", line 138, in standardize_input_data
+    str(data_shape))
+ValueError: Error when checking input: expected reshape_1_input to have shape (500,) but got array with shape (1500,)
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "openpose_100.py", line 94, in <module>
+    fit = model.fit(X_train, y_train, verbose=2, epochs=800, validation_data=(X_test, y_test))
+  File "/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/site-packages/keras/engine/training.py", line 952, in fit
+    batch_size=batch_size)
+  File "/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/site-packages/keras/engine/training.py", line 751, in _standardize_user_data
+    exception_prefix='input')
+  File "/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/site-packages/keras/engine/training_utils.py", line 138, in standardize_input_data
+    str(data_shape))
+ValueError: Error when checking input: expected reshape_1_input to have shape (500,) but got array with shape (1500,)
+2019-10-08 14:04:37.513752: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2019-10-08 14:04:37.942746: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-10-08 14:04:37.943253: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.2155
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2019-10-08 14:04:37.943277: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+2019-10-08 14:05:26.809406: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2019-10-08 14:05:27.201427: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-10-08 14:05:27.201949: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.266
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2019-10-08 14:05:27.201973: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+2019-10-08 14:06:12.885914: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2019-10-08 14:06:13.295110: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-10-08 14:06:13.295657: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.266
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2019-10-08 14:06:13.295683: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+Using TensorFlow backend.
+2019-10-09 17:01:33.602021: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2019-10-09 17:01:33.999202: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-10-09 17:01:33.999741: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.266
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2019-10-09 17:01:33.999768: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+Using TensorFlow backend.
+Using TensorFlow backend.
+2019-10-10 12:58:38.856682: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2019-10-10 12:58:39.263503: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-10-10 12:58:39.263992: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.2155
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2019-10-10 12:58:39.264017: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+2019-10-10 13:00:36.660656: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2019-10-10 13:00:37.061859: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-10-10 13:00:37.062379: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.266
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2019-10-10 13:00:37.062405: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+0
+10000
+20000
+30000
+40000
+50000
+60000
+70000
+80000
+0
+10000
+20000
+30000
+40000
+50000
+60000
+70000
+80000
+2019-10-23 07:59:03.348452: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2019-10-23 07:59:03.780002: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-10-23 07:59:03.780868: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.2155
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2019-10-23 07:59:03.780913: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+Traceback (most recent call last):
+  File "preprocessing.py", line 29, in <module>
+    data = pd.read_csv(read_csv, header=None)
+  File "/home/chikako_takasaki/.pyenv/versions/anaconda3-5.3.0/lib/python3.7/site-packages/pandas/io/parsers.py", line 678, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/home/chikako_takasaki/.pyenv/versions/anaconda3-5.3.0/lib/python3.7/site-packages/pandas/io/parsers.py", line 446, in _read
+    data = parser.read(nrows)
+  File "/home/chikako_takasaki/.pyenv/versions/anaconda3-5.3.0/lib/python3.7/site-packages/pandas/io/parsers.py", line 1036, in read
+    ret = self._engine.read(nrows)
+  File "/home/chikako_takasaki/.pyenv/versions/anaconda3-5.3.0/lib/python3.7/site-packages/pandas/io/parsers.py", line 1848, in read
+    data = self._reader.read(nrows)
+  File "pandas/_libs/parsers.pyx", line 876, in pandas._libs.parsers.TextReader.read
+  File "pandas/_libs/parsers.pyx", line 891, in pandas._libs.parsers.TextReader._read_low_memory
+  File "pandas/_libs/parsers.pyx", line 945, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 932, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "pandas/_libs/parsers.pyx", line 2112, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 1001 fields in line 3929, saw 1501
+
+Traceback (most recent call last):
+  File "preprocessing.py", line 29, in <module>
+    data = pd.read_csv(read_csv, header=None)
+  File "/home/chikako_takasaki/.pyenv/versions/anaconda3-5.3.0/lib/python3.7/site-packages/pandas/io/parsers.py", line 678, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/home/chikako_takasaki/.pyenv/versions/anaconda3-5.3.0/lib/python3.7/site-packages/pandas/io/parsers.py", line 446, in _read
+    data = parser.read(nrows)
+  File "/home/chikako_takasaki/.pyenv/versions/anaconda3-5.3.0/lib/python3.7/site-packages/pandas/io/parsers.py", line 1036, in read
+    ret = self._engine.read(nrows)
+  File "/home/chikako_takasaki/.pyenv/versions/anaconda3-5.3.0/lib/python3.7/site-packages/pandas/io/parsers.py", line 1848, in read
+    data = self._reader.read(nrows)
+  File "pandas/_libs/parsers.pyx", line 876, in pandas._libs.parsers.TextReader.read
+  File "pandas/_libs/parsers.pyx", line 891, in pandas._libs.parsers.TextReader._read_low_memory
+  File "pandas/_libs/parsers.pyx", line 945, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 932, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "pandas/_libs/parsers.pyx", line 2112, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 1001 fields in line 3929, saw 1501
+
+Traceback (most recent call last):
+  File "preprocessing.py", line 29, in <module>
+    data = pd.read_csv(read_csv, header=None)
+  File "/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/site-packages/pandas/io/parsers.py", line 678, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/site-packages/pandas/io/parsers.py", line 440, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/site-packages/pandas/io/parsers.py", line 787, in __init__
+    self._make_engine(self.engine)
+  File "/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/site-packages/pandas/io/parsers.py", line 1014, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/site-packages/pandas/io/parsers.py", line 1708, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 384, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 695, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: File b'../../s20_130_2.csv' does not exist
+Traceback (most recent call last):
+  File "preprocessing.py", line 29, in <module>
+    data = pd.read_csv(read_csv, header=None)
+  File "/home/chikako_takasaki/.pyenv/versions/anaconda3-5.3.0/lib/python3.7/site-packages/pandas/io/parsers.py", line 678, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/home/chikako_takasaki/.pyenv/versions/anaconda3-5.3.0/lib/python3.7/site-packages/pandas/io/parsers.py", line 446, in _read
+    data = parser.read(nrows)
+  File "/home/chikako_takasaki/.pyenv/versions/anaconda3-5.3.0/lib/python3.7/site-packages/pandas/io/parsers.py", line 1036, in read
+    ret = self._engine.read(nrows)
+  File "/home/chikako_takasaki/.pyenv/versions/anaconda3-5.3.0/lib/python3.7/site-packages/pandas/io/parsers.py", line 1848, in read
+    data = self._reader.read(nrows)
+  File "pandas/_libs/parsers.pyx", line 876, in pandas._libs.parsers.TextReader.read
+  File "pandas/_libs/parsers.pyx", line 891, in pandas._libs.parsers.TextReader._read_low_memory
+  File "pandas/_libs/parsers.pyx", line 968, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 1028, in pandas._libs.parsers.TextReader._convert_column_data
+pandas.errors.ParserError: Too many columns specified: expected 1501 and found 1001
+Traceback (most recent call last):
+  File "preprocessing.py", line 29, in <module>
+    data = pd.read_csv(read_csv, header=None)
+  File "/home/chikako_takasaki/.pyenv/versions/anaconda3-5.3.0/lib/python3.7/site-packages/pandas/io/parsers.py", line 678, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/home/chikako_takasaki/.pyenv/versions/anaconda3-5.3.0/lib/python3.7/site-packages/pandas/io/parsers.py", line 446, in _read
+    data = parser.read(nrows)
+  File "/home/chikako_takasaki/.pyenv/versions/anaconda3-5.3.0/lib/python3.7/site-packages/pandas/io/parsers.py", line 1036, in read
+    ret = self._engine.read(nrows)
+  File "/home/chikako_takasaki/.pyenv/versions/anaconda3-5.3.0/lib/python3.7/site-packages/pandas/io/parsers.py", line 1848, in read
+    data = self._reader.read(nrows)
+  File "pandas/_libs/parsers.pyx", line 876, in pandas._libs.parsers.TextReader.read
+  File "pandas/_libs/parsers.pyx", line 891, in pandas._libs.parsers.TextReader._read_low_memory
+  File "pandas/_libs/parsers.pyx", line 945, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 932, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "pandas/_libs/parsers.pyx", line 2112, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 1001 fields in line 3929, saw 1501
+
+Traceback (most recent call last):
+  File "preprocessing.py", line 29, in <module>
+    data = pd.read_csv(read_csv, header=None)
+  File "/home/chikako_takasaki/.pyenv/versions/anaconda3-5.3.0/lib/python3.7/site-packages/pandas/io/parsers.py", line 678, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/home/chikako_takasaki/.pyenv/versions/anaconda3-5.3.0/lib/python3.7/site-packages/pandas/io/parsers.py", line 446, in _read
+    data = parser.read(nrows)
+  File "/home/chikako_takasaki/.pyenv/versions/anaconda3-5.3.0/lib/python3.7/site-packages/pandas/io/parsers.py", line 1036, in read
+    ret = self._engine.read(nrows)
+  File "/home/chikako_takasaki/.pyenv/versions/anaconda3-5.3.0/lib/python3.7/site-packages/pandas/io/parsers.py", line 1848, in read
+    data = self._reader.read(nrows)
+  File "pandas/_libs/parsers.pyx", line 876, in pandas._libs.parsers.TextReader.read
+  File "pandas/_libs/parsers.pyx", line 891, in pandas._libs.parsers.TextReader._read_low_memory
+  File "pandas/_libs/parsers.pyx", line 945, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 932, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "pandas/_libs/parsers.pyx", line 2112, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 1001 fields in line 3929, saw 1501
+
+Traceback (most recent call last):
+  File "preprocessing.py", line 29, in <module>
+    data = pd.read_csv(read_csv, header=None)
+  File "/home/chikako_takasaki/.pyenv/versions/anaconda3-5.3.0/lib/python3.7/site-packages/pandas/io/parsers.py", line 678, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/home/chikako_takasaki/.pyenv/versions/anaconda3-5.3.0/lib/python3.7/site-packages/pandas/io/parsers.py", line 446, in _read
+    data = parser.read(nrows)
+  File "/home/chikako_takasaki/.pyenv/versions/anaconda3-5.3.0/lib/python3.7/site-packages/pandas/io/parsers.py", line 1036, in read
+    ret = self._engine.read(nrows)
+  File "/home/chikako_takasaki/.pyenv/versions/anaconda3-5.3.0/lib/python3.7/site-packages/pandas/io/parsers.py", line 1848, in read
+    data = self._reader.read(nrows)
+  File "pandas/_libs/parsers.pyx", line 876, in pandas._libs.parsers.TextReader.read
+  File "pandas/_libs/parsers.pyx", line 891, in pandas._libs.parsers.TextReader._read_low_memory
+  File "pandas/_libs/parsers.pyx", line 968, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 1028, in pandas._libs.parsers.TextReader._convert_column_data
+pandas.errors.ParserError: Too many columns specified: expected 1501 and found 1001
+0
+10000
+20000
+30000
+40000
+50000
+60000
+70000
+80000
+90000
+100000
+110000
+120000
+0
+10000
+20000
+30000
+40000
+50000
+60000
+70000
+80000
+Using TensorFlow backend.
+2019-10-30 11:41:58.655258: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2019-10-30 11:41:58.707378: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-10-30 11:41:58.707898: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.266
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.69GiB
+2019-10-30 11:41:58.707923: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+2019-10-30 11:43:36.315249: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2019-10-30 11:43:37.005053: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-10-30 11:43:37.005582: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.266
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2019-10-30 11:43:37.005609: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+Using TensorFlow backend.
+Using TensorFlow backend.
+2019-10-31 12:50:36.829176: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2019-10-31 12:50:37.254088: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-10-31 12:50:37.254649: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.266
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2019-10-31 12:50:37.254677: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+2019-10-31 12:52:23.143159: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2019-10-31 12:52:23.562457: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-10-31 12:52:23.562974: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.266
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2019-10-31 12:52:23.563001: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+Using TensorFlow backend.
+Using TensorFlow backend.
+2019-11-03 10:47:28.654845: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2019-11-03 10:47:29.049990: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-11-03 10:47:29.050563: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.266
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2019-11-03 10:47:29.050591: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "openpose_100.py", line 94, in <module>
+    fit = model.fit(X_train, y_train, verbose=2, epochs=800, validation_data=(X_test, y_test))
+  File "/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/site-packages/keras/engine/training.py", line 952, in fit
+    batch_size=batch_size)
+  File "/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/site-packages/keras/engine/training.py", line 751, in _standardize_user_data
+    exception_prefix='input')
+  File "/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/site-packages/keras/engine/training_utils.py", line 138, in standardize_input_data
+    str(data_shape))
+ValueError: Error when checking input: expected reshape_1_input to have shape (1000,) but got array with shape (1500,)
+2019-11-03 10:50:35.583560: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2019-11-03 10:50:36.012659: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-11-03 10:50:36.013189: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.266
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2019-11-03 10:50:36.013213: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+Using TensorFlow backend.
+Using TensorFlow backend.
+2019-11-05 15:16:16.136041: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2019-11-05 15:16:16.539107: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-11-05 15:16:16.539598: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.266
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2019-11-05 15:16:16.539621: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+2019-11-05 15:17:54.027723: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2019-11-05 15:17:54.444969: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-11-05 15:17:54.445502: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.266
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2019-11-05 15:17:54.445535: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+Using TensorFlow backend.
+Using TensorFlow backend.

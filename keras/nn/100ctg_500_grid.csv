@@ -1,0 +1,2 @@
+,mean_fit_time,std_fit_time,mean_score_time,std_score_time,param_bn,param_dropout,params,split0_test_score,split1_test_score,mean_test_score,std_test_score,rank_test_score,split0_train_score,split1_train_score,mean_train_score,std_train_score
+0,155.16642582416534,2.882276177406311,4.083670139312744,0.025621414184570312,true,0.0,"{'bn': 'true', 'dropout': 0.0}",0.16689162589322595,0.17479823402083466,0.17084487437298487,0.003953304063413595,1,0.36807176401365,0.38307744221695095,0.37557460311530044,0.007502839101650477

@@ -1,0 +1,50 @@
+ASF : 2
+Apache : 2
+Foundation : 1
+License : 1
+License
+ : 1
+Licensed : 1
+NOTICE : 1
+See : 1
+Software : 1
+The : 1
+Version : 1
+additional : 1
+agreements : 1
+compliance
+with : 1
+contributor : 1
+copyright : 1
+distributed : 1
+except : 1
+file : 1
+file
+line : 1
+file
+to : 1
+for : 1
+in : 1
+information
+line : 1
+license : 1
+licenses : 1
+line : 1
+may : 1
+more : 1
+not : 1
+one
+line : 1
+or : 1
+ownership : 1
+regarding : 1
+the : 4
+the
+License : 1
+this : 3
+to : 1
+under : 2
+use : 1
+with : 1
+work : 1
+you : 2

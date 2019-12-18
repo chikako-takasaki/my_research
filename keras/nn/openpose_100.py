@@ -12,12 +12,18 @@ from sklearn.model_selection import GridSearchCV
 from keras.wrappers.scikit_learn import KerasClassifier
 
 import matplotlib.pyplot as plt
+import tensorflow as tf
+from keras.backend import tensorflow_backend
+
+config = tf.ConfigProto(gpu_options=tf.GPUOptions(allow_growth=True))
+session = tf.Session(config=config)
+tensorflow_backend.set_session(session)
  
-data = pd.read_csv('~/work/s10_100_pre.csv', header=None)
+data = pd.read_csv('~/work/s10_100_2pre.csv', header=None)
 column_len = len(data.columns)
 
 X = data.loc[:, :column_len-2].values
-y = data.loc[:, columns_len-1].valueus
+y = data.loc[:, column_len-1].values
 X_train, X_test, y_train, y_test = train_test_split(X, y)
 
 num_classes = 100
@@ -28,17 +34,17 @@ def create_model(activation="relu", nb_hidden=500, layer_num=3, dropout=0.2):
   model = Sequential([
     Dense(500, input_shape=(500,)),
     Activation(activation),
-#    Dropout(dropout),
+    Dropout(dropout),
   ])
   for i in range(layer_num) :
     model.add(Dense(nb_hidden))
 #    model.add(BatchNormalization())
     model.add(Activation(activation))
-#    model.add(Dropout(dropout))
-  model.add(Dense(100))
+    model.add(Dropout(dropout))
+  model.add(Dense(num_classes))
   model.add(Activation('softmax'))
 
-  model.compile(loss='categorical_crossentropy', optimizer='sgd', metrics=['accuracy'])
+  model.compile(loss='categorical_crossentropy', optimizer='sgd', metrics=['accuracy', 'top_k_categorical_accuracy'])
   return model
 
 #model = KerasClassifier(build_fn=create_model, verbose=0)
@@ -72,6 +78,10 @@ print("Test loss:", test_score[0])
 print('test accuracy : ', test_score[1])
 print("model evaluate time")
 print(process_time)
+
+print('top5 accurarcy')
+print('train : ',train_score[2])
+print('test : ',test_score[2])
 fig, (axL, axR) = plt.subplots(ncols=2, figsize=(10,4))
 def plot_history_loss(fit):
   # Plot the loss in the history
@@ -84,8 +94,8 @@ def plot_history_loss(fit):
 
 def plot_history_acc(fit):
   # Plot the loss in the history
-  axR.plot(fit.history['acc'],label="accuracy for training")
-  axR.plot(fit.history['val_acc'],label="accuracy for validation")
+  axR.plot(fit.history['top_k_categorical_accuracy'],label="accuracy for training")
+  axR.plot(fit.history['val_top_k_categorical_accuracy'],label="accuracy for validation")
   axR.set_title('model accuracy')
   axR.set_xlabel('epoch')
   axR.set_ylabel('accuracy')
@@ -94,5 +104,5 @@ def plot_history_acc(fit):
 
 plot_history_loss(fit)
 plot_history_acc(fit)
-fig.savefig('./image/100ctg/all3_500.png')
+fig.savefig('./image/100ctg_v2/s10/all3dr2_500.png')
 plt.close()

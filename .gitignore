@@ -2,5 +2,12 @@ ffmpeg
 keras_gcn
 *.out
 .*
-aug_data
+aug_data/
 *.tar.gz
+csv_data_100ctg/
+csv_data/
+tensorflow/
+pytorch/
+kafka/
+!/keras/tensorflow/
+slack.sh

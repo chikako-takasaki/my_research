@@ -13,7 +13,7 @@ from keras.wrappers.scikit_learn import KerasClassifier
 
 import matplotlib.pyplot as plt
 
-data = pd.read_csv('openpose_data2.csv')
+data = pd.read_csv('../../csv_data/openpose_data2.csv')
 X = data.drop("category", axis=1)
 y = data["category"]
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0)
