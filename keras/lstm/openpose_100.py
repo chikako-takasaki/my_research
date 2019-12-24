@@ -11,6 +11,13 @@ import matplotlib.pyplot as plt
 import numpy
 from sklearn.model_selection import train_test_split, GridSearchCV, GroupKFold
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
+import tensorflow as tf
+from keras.backend import tensorflow_backend
+
+config = tf.ConfigProto(gpu_options=tf.GPUOptions(allow_growth=True))
+session = tf.Session(config=config)
+tensorflow_backend.set_session(session)
+ 
 #argv = sys.argv 
 #layer_num = int(argv[1])
 #nb_hidden = int(argv[2])
@@ -31,12 +38,12 @@ def preprocessing(data):
   return data.values
 
 # パラメーター
-length_of_sequence = 30 
+length_of_sequence = 10 
 in_out_neurons = 50
 n_hidden = 50
 
 # データ整形
-data = pd.read_csv('~/work/s30_100_2pre.csv', header=None)
+data = pd.read_csv('~/work/csv_data_100ctg/s10v2_100_pre.csv', header=None)
 column_len = len(data.columns)
 X = data.loc[:, :(column_len-2)]
 y = data.loc[:, column_len-1]
@@ -118,7 +125,7 @@ print('test : ',test_score[2])
 fig, (axL, axR) = plt.subplots(ncols=2, figsize=(10,4))
 plot_history_loss(fit)
 plot_history_acc(fit)
-fig.savefig("./image/100ctg_v2/s30/d2_800.png")
+fig.savefig("./image/100ctg_v2/s10_v2/d2_800.png")
 plt.close()
 
 

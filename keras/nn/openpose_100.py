@@ -19,7 +19,7 @@ config = tf.ConfigProto(gpu_options=tf.GPUOptions(allow_growth=True))
 session = tf.Session(config=config)
 tensorflow_backend.set_session(session)
  
-data = pd.read_csv('~/work/csv_data_100ctg/s10_100_v2_2pre.csv', header=None)
+data = pd.read_csv('~/work/csv_data_100ctg/s10v2_100_pre.csv', header=None)
 column_len = len(data.columns)
 
 X = data.loc[:, :column_len-2].values
@@ -30,7 +30,7 @@ num_classes = 100
 y_train = to_categorical(y_train, num_classes)
 y_test = to_categorical(y_test, num_classes)
 
-def create_model(activation="relu", nb_hidden=500, layer_num=3, dropout=0.2):
+def create_model(activation="relu", nb_hidden=500, layer_num=3, dropout=0.0):
   model = Sequential([
     Dense(500, input_shape=(500,)),
     Activation(activation),
@@ -38,7 +38,7 @@ def create_model(activation="relu", nb_hidden=500, layer_num=3, dropout=0.2):
   ])
   for i in range(layer_num) :
     model.add(Dense(nb_hidden))
-    model.add(BatchNormalization())
+#    model.add(BatchNormalization())
     model.add(Activation(activation))
     model.add(Dropout(dropout))
   model.add(Dense(num_classes))
@@ -104,5 +104,5 @@ def plot_history_acc(fit):
 
 plot_history_loss(fit)
 plot_history_acc(fit)
-fig.savefig('./image/100ctg_v2/s10_v2/all3both_500.png')
+fig.savefig('./image/100ctg_v2/s10_v2/all3_500.png')
 plt.close()
