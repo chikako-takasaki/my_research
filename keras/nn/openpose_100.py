@@ -104,5 +104,6 @@ def plot_history_acc(fit):
 
 plot_history_loss(fit)
 plot_history_acc(fit)
-fig.savefig('./image/100ctg_v2/s10_v2/all3_500.png')
+#fig.savefig('./image/100ctg_v2/s10_v2/all3_500.png')
+fig.savefig('test.png')
 plt.close()

@@ -1,4 +1,6 @@
-import time, sys
+#!/usr/bin/env python -u
+
+import time, sys, codecs
 from keras.models import Sequential
 from keras.layers import Reshape, LSTM, TimeDistributed, Dense, Activation, Dropout, BatchNormalization
 from keras.utils import np_utils
@@ -13,6 +15,8 @@ from sklearn.model_selection import train_test_split, GridSearchCV, GroupKFold
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
 import tensorflow as tf
 from keras.backend import tensorflow_backend
+
+sys.stdout = open('log.out', 'w')
 
 config = tf.ConfigProto(gpu_options=tf.GPUOptions(allow_growth=True))
 session = tf.Session(config=config)
@@ -38,12 +42,12 @@ def preprocessing(data):
   return data.values
 
 # パラメーター
-length_of_sequence = 10 
+length_of_sequence = 20 
 in_out_neurons = 50
 n_hidden = 50
 
 # データ整形
-data = pd.read_csv('~/work/csv_data_100ctg/s10v2_100_pre.csv', header=None)
+data = pd.read_csv('~/work/csv_data_100ctg/s20_100_2pre.csv', header=None)
 column_len = len(data.columns)
 X = data.loc[:, :(column_len-2)]
 y = data.loc[:, column_len-1]
@@ -62,12 +66,14 @@ num_classes = 100
 y_train = to_categorical(y_train, num_classes)
 y_test = to_categorical(y_test, num_classes)
 
+print("*************************make data************************")
+sys.stdout.flush()
 def create_model(activation="relu"):
   model = Sequential([
     Reshape((length_of_sequence, 50), input_shape=(length_of_sequence*50,)),
     TimeDistributed(Dense(n_hidden), input_shape=(length_of_sequence, in_out_neurons)),
     TimeDistributed(Dense(n_hidden)),
-    LSTM(n_hidden, dropout=0.0, recurrent_dropout=0.0),
+    LSTM(n_hidden, dropout=0.2, recurrent_dropout=0.2),
     Dense(num_classes),
     Activation('softmax')
   ])
@@ -95,10 +101,12 @@ def plot_history_acc(fit6):
 
 model = create_model()
 model.summary()
-  
+print("*************************make model************************")
+sys.stdout.flush() 
 # Fit the model
 start = time.time()
-fit = model.fit(X_train, y_train, verbose=2, epochs=800, validation_data=(X_test, y_test))
+fit = model.fit(X_train, y_train, verbose=2, epochs=2000, validation_data=(X_test, y_test))
+sys.stdout.flush() 
 process_time = time.time() - start
 
 # Evaluate
@@ -125,7 +133,7 @@ print('test : ',test_score[2])
 fig, (axL, axR) = plt.subplots(ncols=2, figsize=(10,4))
 plot_history_loss(fit)
 plot_history_acc(fit)
-fig.savefig("./image/100ctg_v2/s10_v2/d2_800.png")
+fig.savefig("./image/100ctg_v2/s20/d2both_2000.png")
 plt.close()
 
 
