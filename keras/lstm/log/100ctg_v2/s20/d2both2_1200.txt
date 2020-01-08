@@ -1,0 +1,57 @@
+*************************make data************************
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+reshape_1 (Reshape)          (None, 20, 50)            0         
+_________________________________________________________________
+time_distributed_1 (TimeDist (None, 20, 50)            2550      
+_________________________________________________________________
+time_distributed_2 (TimeDist (None, 20, 50)            2550      
+_________________________________________________________________
+lstm_1 (LSTM)                (None, 50)                20200     
+_________________________________________________________________
+dense_3 (Dense)              (None, 100)               5100      
+_________________________________________________________________
+activation_1 (Activation)    (None, 100)               0         
+=================================================================
+Total params: 30,400
+Trainable params: 30,400
+Non-trainable params: 0
+_________________________________________________________________
+*************************make model************************
+Train on 96029 samples, validate on 32010 samples
+Epoch 1/12
+146s - loss: 4.5237 - acc: 0.0270 - top_k_categorical_accuracy: 0.1049 - val_loss: 4.4170 - val_acc: 0.0432 - val_top_k_categorical_accuracy: 0.1499
+Epoch 2/12
+147s - loss: 4.3548 - acc: 0.0436 - top_k_categorical_accuracy: 0.1643 - val_loss: 4.2698 - val_acc: 0.0558 - val_top_k_categorical_accuracy: 0.1982
+Epoch 3/12
+149s - loss: 4.2381 - acc: 0.0559 - top_k_categorical_accuracy: 0.2012 - val_loss: 4.1457 - val_acc: 0.0666 - val_top_k_categorical_accuracy: 0.2366
+Epoch 4/12
+147s - loss: 4.1353 - acc: 0.0690 - top_k_categorical_accuracy: 0.2351 - val_loss: 4.0527 - val_acc: 0.0809 - val_top_k_categorical_accuracy: 0.2624
+Epoch 5/12
+145s - loss: 4.0571 - acc: 0.0799 - top_k_categorical_accuracy: 0.2569 - val_loss: 3.9878 - val_acc: 0.0924 - val_top_k_categorical_accuracy: 0.2772
+Epoch 6/12
+146s - loss: 3.9941 - acc: 0.0893 - top_k_categorical_accuracy: 0.2750 - val_loss: 3.9188 - val_acc: 0.1035 - val_top_k_categorical_accuracy: 0.2969
+Epoch 7/12
+146s - loss: 3.9404 - acc: 0.0968 - top_k_categorical_accuracy: 0.2908 - val_loss: 3.8713 - val_acc: 0.1066 - val_top_k_categorical_accuracy: 0.3092
+Epoch 8/12
+146s - loss: 3.8905 - acc: 0.1026 - top_k_categorical_accuracy: 0.3054 - val_loss: 3.8110 - val_acc: 0.1182 - val_top_k_categorical_accuracy: 0.3301
+Epoch 9/12
+147s - loss: 3.8438 - acc: 0.1108 - top_k_categorical_accuracy: 0.3198 - val_loss: 3.7819 - val_acc: 0.1227 - val_top_k_categorical_accuracy: 0.3383
+Epoch 10/12
+145s - loss: 3.7991 - acc: 0.1190 - top_k_categorical_accuracy: 0.3349 - val_loss: 3.7315 - val_acc: 0.1302 - val_top_k_categorical_accuracy: 0.3569
+Epoch 11/12
+147s - loss: 3.7606 - acc: 0.1228 - top_k_categorical_accuracy: 0.3452 - val_loss: 3.6885 - val_acc: 0.1347 - val_top_k_categorical_accuracy: 0.3656
+Epoch 12/12
+145s - loss: 3.7255 - acc: 0.1274 - top_k_categorical_accuracy: 0.3563 - val_loss: 3.6432 - val_acc: 0.1423 - val_top_k_categorical_accuracy: 0.3822
+model training time
+1763.9370007514954
+train loss: 3.6261639706458766
+train accuracy :  0.143394183007139
+Test loss: 3.643159223280635
+test accuracy :  0.1422680412375789
+model evaluate time
+13.366381883621216
+top5 accurarcy
+train :  0.38657072342590143
+test :  0.38216182443172775

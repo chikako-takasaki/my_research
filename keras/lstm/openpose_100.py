@@ -16,8 +16,6 @@ from sklearn.preprocessing import StandardScaler, MinMaxScaler
 import tensorflow as tf
 from keras.backend import tensorflow_backend
 
-sys.stdout = open('log.out', 'w')
-
 config = tf.ConfigProto(gpu_options=tf.GPUOptions(allow_growth=True))
 session = tf.Session(config=config)
 tensorflow_backend.set_session(session)
@@ -88,6 +86,7 @@ def plot_history_loss(fit6):
   axL.set_title('model loss')
   axL.set_xlabel('epoch')
   axL.set_ylabel('loss')
+  axL.set_ylim(2.0, 4.0)
   axL.legend(loc='upper right')
 
 def plot_history_acc(fit6):
@@ -97,6 +96,7 @@ def plot_history_acc(fit6):
   axR.set_title('model accuracy')
   axR.set_xlabel('epoch')
   axR.set_ylabel('accuracy')
+  axR.set_ylim(0, 100)
   axR.legend(loc='lower right')
 
 model = create_model()
@@ -105,7 +105,7 @@ print("*************************make model************************")
 sys.stdout.flush() 
 # Fit the model
 start = time.time()
-fit = model.fit(X_train, y_train, verbose=2, epochs=2000, validation_data=(X_test, y_test))
+fit = model.fit(X_train, y_train, verbose=2, epochs=12, validation_data=(X_test, y_test))
 sys.stdout.flush() 
 process_time = time.time() - start
 
@@ -133,7 +133,7 @@ print('test : ',test_score[2])
 fig, (axL, axR) = plt.subplots(ncols=2, figsize=(10,4))
 plot_history_loss(fit)
 plot_history_acc(fit)
-fig.savefig("./image/100ctg_v2/s20/d2both_2000.png")
+fig.savefig("./image/100ctg_v2/s20/d2both_1200.png")
 plt.close()
 
 
