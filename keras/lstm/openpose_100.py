@@ -40,12 +40,12 @@ def preprocessing(data):
   return data.values
 
 # パラメーター
-length_of_sequence = 20 
+length_of_sequence = 30 
 in_out_neurons = 50
 n_hidden = 50
 
 # データ整形
-data = pd.read_csv('~/work/csv_data_100ctg/s20_100_2pre.csv', header=None)
+data = pd.read_csv('~/work/csv_data_100ctg/s30_100_2pre.csv', header=None)
 column_len = len(data.columns)
 X = data.loc[:, :(column_len-2)]
 y = data.loc[:, column_len-1]
@@ -71,7 +71,7 @@ def create_model(activation="relu"):
     Reshape((length_of_sequence, 50), input_shape=(length_of_sequence*50,)),
     TimeDistributed(Dense(n_hidden), input_shape=(length_of_sequence, in_out_neurons)),
     TimeDistributed(Dense(n_hidden)),
-    LSTM(n_hidden, dropout=0.2, recurrent_dropout=0.2),
+    LSTM(n_hidden, dropout=0.2, recurrent_dropout=0.0),
     Dense(num_classes),
     Activation('softmax')
   ])
@@ -86,7 +86,7 @@ def plot_history_loss(fit6):
   axL.set_title('model loss')
   axL.set_xlabel('epoch')
   axL.set_ylabel('loss')
-  axL.set_ylim(2.0, 4.0)
+  axL.set_ylim(2.0, 5.0)
   axL.legend(loc='upper right')
 
 def plot_history_acc(fit6):
@@ -96,7 +96,7 @@ def plot_history_acc(fit6):
   axR.set_title('model accuracy')
   axR.set_xlabel('epoch')
   axR.set_ylabel('accuracy')
-  axR.set_ylim(0, 100)
+  axR.set_ylim(0, 1.0)
   axR.legend(loc='lower right')
 
 model = create_model()
@@ -105,7 +105,7 @@ print("*************************make model************************")
 sys.stdout.flush() 
 # Fit the model
 start = time.time()
-fit = model.fit(X_train, y_train, verbose=2, epochs=12, validation_data=(X_test, y_test))
+fit = model.fit(X_train, y_train, verbose=2, epochs=1200, validation_data=(X_test, y_test))
 sys.stdout.flush() 
 process_time = time.time() - start
 
@@ -133,7 +133,7 @@ print('test : ',test_score[2])
 fig, (axL, axR) = plt.subplots(ncols=2, figsize=(10,4))
 plot_history_loss(fit)
 plot_history_acc(fit)
-fig.savefig("./image/100ctg_v2/s20/d2both_1200.png")
+fig.savefig("./image/100ctg_v2/s30/d2dr2_1200.png")
 plt.close()
 
 

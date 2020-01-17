@@ -36,3 +36,171 @@ name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.266
 pciBusID: 0000:0f:00.0
 totalMemory: 3.95GiB freeMemory: 3.87GiB
 2020-01-08 15:52:20.517540: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+Using TensorFlow backend.
+/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/importlib/_bootstrap.py:205: RuntimeWarning: compiletime version 3.5 of module 'tensorflow.python.framework.fast_tensor_util' does not match runtime version 3.6
+  return f(*args, **kwds)
+2020-01-08 16:28:36.167791: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2020-01-08 16:28:36.562675: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:892] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-01-08 16:28:36.562960: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.266
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2020-01-08 16:28:36.562987: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+Using TensorFlow backend.
+/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/importlib/_bootstrap.py:205: RuntimeWarning: compiletime version 3.5 of module 'tensorflow.python.framework.fast_tensor_util' does not match runtime version 3.6
+  return f(*args, **kwds)
+2020-01-08 16:29:28.501228: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2020-01-08 16:29:28.545249: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:892] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-01-08 16:29:28.545544: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.266
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.73GiB
+2020-01-08 16:29:28.545566: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+Using TensorFlow backend.
+/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/importlib/_bootstrap.py:205: RuntimeWarning: compiletime version 3.5 of module 'tensorflow.python.framework.fast_tensor_util' does not match runtime version 3.6
+  return f(*args, **kwds)
+2020-01-08 16:30:27.457257: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2020-01-08 16:30:27.501906: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:892] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-01-08 16:30:27.502227: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.266
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.58GiB
+2020-01-08 16:30:27.502264: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+Using TensorFlow backend.
+/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/importlib/_bootstrap.py:205: RuntimeWarning: compiletime version 3.5 of module 'tensorflow.python.framework.fast_tensor_util' does not match runtime version 3.6
+  return f(*args, **kwds)
+2020-01-08 16:31:15.184384: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2020-01-08 16:31:15.231560: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:892] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-01-08 16:31:15.231869: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.266
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.44GiB
+2020-01-08 16:31:15.231897: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+Using TensorFlow backend.
+/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/importlib/_bootstrap.py:205: RuntimeWarning: compiletime version 3.5 of module 'tensorflow.python.framework.fast_tensor_util' does not match runtime version 3.6
+  return f(*args, **kwds)
+2020-01-14 12:38:02.807848: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2020-01-14 12:38:03.221272: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:892] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-01-14 12:38:03.221837: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.266
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2020-01-14 12:38:03.221896: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+Traceback (most recent call last):
+  File "openpose_100.py", line 108, in <module>
+    fit = model.fit(X_train, y_train, verbose=2, epochs=1200, validation_data=(X_test, y_test))
+  File "/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/site-packages/keras/models.py", line 867, in fit
+    initial_epoch=initial_epoch)
+  File "/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/site-packages/keras/engine/training.py", line 1522, in fit
+    batch_size=batch_size)
+  File "/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/site-packages/keras/engine/training.py", line 1378, in _standardize_user_data
+    exception_prefix='input')
+  File "/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/site-packages/keras/engine/training.py", line 144, in _standardize_input_data
+    str(array.shape))
+ValueError: Error when checking input: expected reshape_1_input to have shape (None, 1500) but got array with shape (96029, 1000)
+Using TensorFlow backend.
+/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/importlib/_bootstrap.py:205: RuntimeWarning: compiletime version 3.5 of module 'tensorflow.python.framework.fast_tensor_util' does not match runtime version 3.6
+  return f(*args, **kwds)
+2020-01-14 12:38:44.448290: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2020-01-14 12:38:44.885084: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:892] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-01-14 12:38:44.886012: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.266
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2020-01-14 12:38:44.886039: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+Traceback (most recent call last):
+  File "openpose_100.py", line 108, in <module>
+    fit = model.fit(X_train, y_train, verbose=2, epochs=1200, validation_data=(X_test, y_test))
+  File "/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/site-packages/keras/models.py", line 867, in fit
+    initial_epoch=initial_epoch)
+  File "/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/site-packages/keras/engine/training.py", line 1522, in fit
+    batch_size=batch_size)
+  File "/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/site-packages/keras/engine/training.py", line 1378, in _standardize_user_data
+    exception_prefix='input')
+  File "/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/site-packages/keras/engine/training.py", line 144, in _standardize_input_data
+    str(array.shape))
+ValueError: Error when checking input: expected reshape_1_input to have shape (None, 1500) but got array with shape (96029, 1000)
+Using TensorFlow backend.
+/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/importlib/_bootstrap.py:205: RuntimeWarning: compiletime version 3.5 of module 'tensorflow.python.framework.fast_tensor_util' does not match runtime version 3.6
+  return f(*args, **kwds)
+2020-01-14 12:47:12.172362: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2020-01-14 12:47:12.564769: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:892] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-01-14 12:47:12.565508: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.266
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2020-01-14 12:47:12.565538: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+Using TensorFlow backend.
+/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/importlib/_bootstrap.py:205: RuntimeWarning: compiletime version 3.5 of module 'tensorflow.python.framework.fast_tensor_util' does not match runtime version 3.6
+  return f(*args, **kwds)
+2020-01-14 12:47:56.431052: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2020-01-14 12:47:56.476538: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:892] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-01-14 12:47:56.476854: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.266
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.72GiB
+2020-01-14 12:47:56.476881: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+Using TensorFlow backend.
+/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/importlib/_bootstrap.py:205: RuntimeWarning: compiletime version 3.5 of module 'tensorflow.python.framework.fast_tensor_util' does not match runtime version 3.6
+  return f(*args, **kwds)
+2020-01-14 12:48:38.493408: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2020-01-14 12:48:38.539563: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:892] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-01-14 12:48:38.539876: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.266
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.57GiB
+2020-01-14 12:48:38.539901: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+Using TensorFlow backend.
+/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/importlib/_bootstrap.py:205: RuntimeWarning: compiletime version 3.5 of module 'tensorflow.python.framework.fast_tensor_util' does not match runtime version 3.6
+  return f(*args, **kwds)
+2020-01-14 12:49:11.673459: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2020-01-14 12:49:11.717976: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:892] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-01-14 12:49:11.718268: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.266
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.50GiB
+2020-01-14 12:49:11.718295: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+Terminated
+Terminated
+Terminated
+Terminated
+Using TensorFlow backend.
+/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/importlib/_bootstrap.py:205: RuntimeWarning: compiletime version 3.5 of module 'tensorflow.python.framework.fast_tensor_util' does not match runtime version 3.6
+  return f(*args, **kwds)
+2020-01-15 15:47:40.417255: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2020-01-15 15:47:41.045947: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:892] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-01-15 15:47:41.046245: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.266
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2020-01-15 15:47:41.046275: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+Using TensorFlow backend.
+/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/importlib/_bootstrap.py:205: RuntimeWarning: compiletime version 3.5 of module 'tensorflow.python.framework.fast_tensor_util' does not match runtime version 3.6
+  return f(*args, **kwds)
+2020-01-15 15:48:14.106410: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2020-01-15 15:48:14.363287: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:892] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-01-15 15:48:14.363651: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.266
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.80GiB
+2020-01-15 15:48:14.363683: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+Using TensorFlow backend.
+/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/importlib/_bootstrap.py:205: RuntimeWarning: compiletime version 3.5 of module 'tensorflow.python.framework.fast_tensor_util' does not match runtime version 3.6
+  return f(*args, **kwds)
+2020-01-15 15:48:33.972100: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2020-01-15 15:48:34.021388: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:892] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-01-15 15:48:34.021699: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.266
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.66GiB
+2020-01-15 15:48:34.021724: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)
+Using TensorFlow backend.
+/home/chikako_takasaki/.pyenv/versions/3.6.0/lib/python3.6/importlib/_bootstrap.py:205: RuntimeWarning: compiletime version 3.5 of module 'tensorflow.python.framework.fast_tensor_util' does not match runtime version 3.6
+  return f(*args, **kwds)
+2020-01-15 15:49:20.813241: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+2020-01-15 15:49:20.864418: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:892] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-01-15 15:49:20.864710: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.266
+pciBusID: 0000:0f:00.0
+totalMemory: 3.95GiB freeMemory: 3.43GiB
+2020-01-15 15:49:20.864735: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 980, pci bus id: 0000:0f:00.0, compute capability: 5.2)

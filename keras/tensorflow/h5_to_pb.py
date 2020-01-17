@@ -51,7 +51,7 @@ def get_model_info(tf_model_filename):
 
 if __name__ == '__main__':
   # convert
-  keras_model_filename = 'mnist_dense.h5'
-  tf_model_filename = 'mnist_dense.pb'
+  keras_model_filename = 'stair_nn.h5'
+  tf_model_filename = 'stair_nn.pb'
   convert_keras_to_tensorflow(keras_model_filename, tf_model_filename)
   get_model_info(tf_model_filename)
